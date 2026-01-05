@@ -1,9 +1,9 @@
 import numpy as np
 
 
-def calc(mat: np.ndarray) -> None:
+def calc(mat: np.ndarray, powers: int = 14) -> None:
     cur = mat
-    for i in range(1, 14 + 1):
+    for i in range(1, powers + 1):
         print(f"A^{i} = {cur}")
         print(" ".join(map(str, np.matrix.flatten(cur))))
         cur = cur @ mat

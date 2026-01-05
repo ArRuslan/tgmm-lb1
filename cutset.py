@@ -31,6 +31,6 @@ cutset_matrix_frfr = reorder_matrix(cutset_matrix)
 print_matrix(cutset_matrix_frfr, True)
 
 np_cutset = np.asarray(cutset_matrix_frfr, dtype=np.int8)
-np_cutset = np_cutset[:, len(spanning_nodes):]
+np_cutset = np_cutset[:, len(spanning_idxs):]
 print(np_cutset)
 print(np_cutset.transpose())
